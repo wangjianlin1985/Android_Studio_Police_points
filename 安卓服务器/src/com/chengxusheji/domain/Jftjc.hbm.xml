@@ -1,0 +1,59 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.chengxusheji.domain">
+
+	<class name="Jftjc" table="yy_jftj">
+
+          <!-- 主键积分id -->
+          <id name="id" column="id">
+            <generator class="native"/>
+          </id>
+
+          <!-- 简单字符串属性: 积分条件 -->
+          <property
+            name="jftj"
+            column="jftj"
+            type="string"
+            length="120"
+          />
+
+          <!-- 简单浮点型属性: 分数 -->
+          <property
+            name="fs"
+            column="fs"
+            type="float"
+          />
+
+          <!-- 简单整型属性: 积分类型 -->
+          <property
+            name="typeid"
+            column="typeid"
+            type="int"
+
+          />
+
+          <!-- 简单整型属性: mtypeid -->
+          <property
+            name="mtypeid"
+            column="mtypeid"
+            type="int"
+
+          />
+
+          <!-- 简单字符串属性: 备注 -->
+          <property
+            name="bz"
+            column="bz"
+            type="string"
+            length="2000"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 

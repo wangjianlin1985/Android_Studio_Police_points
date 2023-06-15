@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+     <constant name="struts.i18n.encoding" value="gbk"/>
+     <constant name="struts.devMode" value="true" />
+     <!--Struts2中Action对象的创建交给spring完成-->
+     <constant name="struts.objectFactory" value="spring" />   
+       
+          
+	 <package name="login" namespace="/login" extends="struts-default">
+	        <action name="login_*" class="loginAction" method="{1}">
+	        	<result name="main_view">/main.jsp</result>
+	        	<result name="error">/error.jsp</result>
+	        	<result name="input">/login.jsp</result> 
+	        	<result name="login_view">/login.jsp</result>
+	          
+	        </action>  
+	 </package>
+	 
+         <!-- JftjcAction配置 -->
+         <package name="Jftjc" namespace="/Jftjc" extends="struts-default">
+           <action name="Jftjc_*" class="jftjcAction" method="{1}">
+             <result name="add_view">/Jftjc_add.jsp</result>
+             <result name="input">/Jftjc_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/Jftjc_query_result.jsp</result>
+             <result name="front_query_view">/Jftjc_frontquery_result.jsp</result>
+             <result name="front_show_view">/Jftjc_frontshow.jsp</result>
+             <result name="modify_view">/Jftjc_modify.jsp</result>
+           </action>
+         </package>
+
+         <!-- ZxyjfAction配置 -->
+         <package name="Zxyjf" namespace="/Zxyjf" extends="struts-default">
+           <action name="Zxyjf_*" class="zxyjfAction" method="{1}">
+             <result name="add_view">/Zxyjf_add.jsp</result>
+             <result name="input">/Zxyjf_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/Zxyjf_query_result.jsp</result>
+             <result name="front_query_view">/Zxyjf_frontquery_result.jsp</result>
+             <result name="front_show_view">/Zxyjf_frontshow.jsp</result>
+             <result name="modify_view">/Zxyjf_modify.jsp</result>
+           </action>
+         </package>
+
+         <!-- ZxyAction配置 -->
+         <package name="Zxy" namespace="/Zxy" extends="struts-default">
+           <action name="Zxy_*" class="zxyAction" method="{1}">
+             <result name="add_view">/Zxy_add.jsp</result>
+             <result name="input">/Zxy_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/Zxy_query_result.jsp</result>
+             <result name="front_query_view">/Zxy_frontquery_result.jsp</result>
+             <result name="front_show_view">/Zxy_frontshow.jsp</result>
+             <result name="modify_view">/Zxy_modify.jsp</result>
+           </action>
+         </package>
+
+         <!-- ZxymjAction配置 -->
+         <package name="Zxymj" namespace="/Zxymj" extends="struts-default">
+           <action name="Zxymj_*" class="zxymjAction" method="{1}">
+             <result name="add_view">/Zxymj_add.jsp</result>
+             <result name="input">/Zxymj_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/Zxymj_query_result.jsp</result>
+             <result name="front_query_view">/Zxymj_frontquery_result.jsp</result>
+             <result name="front_show_view">/Zxymj_frontshow.jsp</result>
+             <result name="modify_view">/Zxymj_modify.jsp</result>
+           </action>
+         </package>
+
+         <!-- ZxyndAction配置 -->
+         <package name="Zxynd" namespace="/Zxynd" extends="struts-default">
+           <action name="Zxynd_*" class="zxyndAction" method="{1}">
+             <result name="add_view">/Zxynd_add.jsp</result>
+             <result name="input">/Zxynd_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/Zxynd_query_result.jsp</result>
+             <result name="front_query_view">/Zxynd_frontquery_result.jsp</result>
+             <result name="front_show_view">/Zxynd_frontshow.jsp</result>
+             <result name="modify_view">/Zxynd_modify.jsp</result>
+           </action>
+         </package>
+
+         <!-- ZxymjndAction配置 -->
+         <package name="Zxymjnd" namespace="/Zxymjnd" extends="struts-default">
+           <action name="Zxymjnd_*" class="zxymjndAction" method="{1}">
+             <result name="add_view">/Zxymjnd_add.jsp</result>
+             <result name="input">/Zxymjnd_add.jsp</result>
+             <result name="add_success">/message.jsp</result>
+             <result name="delete_success">/message.jsp</result>
+             <result name="modify_success">/message.jsp</result>
+             <result name="error">/error.jsp</result>
+             <result name="query_view">/Zxymjnd_query_result.jsp</result>
+             <result name="front_query_view">/Zxymjnd_frontquery_result.jsp</result>
+             <result name="front_show_view">/Zxymjnd_frontshow.jsp</result>
+             <result name="modify_view">/Zxymjnd_modify.jsp</result>
+           </action>
+         </package>
+
+
+	 
+	 
+
+ 	 <package name="password" namespace="/password" extends="struts-default">
+	        <action name="ChangePassword" class="changePasswordAction">  
+	        	<result name="change_success">/message.jsp</result>
+	        	<result name="error">/error.jsp</result> 
+	        </action>  
+	 </package> 
+	  
+	 <package name="User" namespace="/User" extends="struts-default">
+	        <action name="User_*" class="com.chengxusheji.action.UserAction" method="{1}">  
+	        	<result name="user_query_view">/user_query_result.jsp</result>
+	        	<result name="success">/message.jsp</result>
+	        	<result name="error">/error.jsp</result> 
+	        </action>  
+	 </package>  
+	 
+</struts>

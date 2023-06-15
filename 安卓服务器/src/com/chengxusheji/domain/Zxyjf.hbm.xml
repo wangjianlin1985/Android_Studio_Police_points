@@ -1,0 +1,143 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.chengxusheji.domain">
+
+	<class name="Zxyjf" table="yy_zxyjf">
+
+          <!-- 主键id -->
+          <id name="id" column="id">
+            <generator class="native"/>
+          </id>
+
+          <!-- 简单整型属性: 部门id -->
+          <property
+            name="bid"
+            column="bid"
+            type="int"
+
+          />
+
+          <!-- 简单字符串属性: 部门名称 -->
+          <property
+            name="bname"
+            column="bname"
+            type="string"
+            length="30"
+          />
+
+          <!-- 简单整型属性: 部门类型 -->
+          <property
+            name="btypes"
+            column="btypes"
+            type="int"
+
+          />
+
+          <!-- 简单字符串属性: 警员id -->
+          <property
+            name="sid"
+            column="sid"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 警员姓名 -->
+          <property
+            name="sname"
+            column="sname"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单整型属性: 积分条件ID -->
+          <property
+            name="jid"
+            column="jid"
+            type="int"
+
+          />
+
+          <!-- 简单字符串属性: 积分条件 -->
+          <property
+            name="jftj"
+            column="jftj"
+            type="string"
+            length="100"
+          />
+
+          <!-- 简单字符串属性: 积分季度 -->
+          <property
+            name="jfjd"
+            column="jfjd"
+            type="string"
+            length="40"
+          />
+
+          <!-- 简单日期型属性: 积分日期 -->
+          <property
+            name="jfdate"
+            column="jfdate"
+            	type="timestamp"
+            	length="10"
+          />
+
+          <!-- 简单日期型属性: 积分季度开始时间 -->
+          <property
+            name="jdsdate"
+            column="jdsdate"
+            	type="timestamp"
+            	length="10"
+          />
+
+          <!-- 简单浮点型属性: 分数 -->
+          <property
+            name="fs"
+            column="fs"
+            type="float"
+          />
+
+          <!-- 简单整型属性: 数量 -->
+          <property
+            name="sl"
+            column="sl"
+            type="int"
+
+          />
+
+          <!-- 简单浮点型属性: 刑事发案积分 -->
+          <property
+            name="xsfajf"
+            column="xsfajf"
+            type="float"
+          />
+
+          <!-- 简单浮点型属性: 号码走访积分 -->
+          <property
+            name="hmzfjf"
+            column="hmzfjf"
+            type="float"
+          />
+
+          <!-- 简单浮点型属性: 测评反馈积分 -->
+          <property
+            name="cpfkjf"
+            column="cpfkjf"
+            type="float"
+          />
+
+          <!-- 简单浮点型属性: 单位重视积分 -->
+          <property
+            name="dwzsjf"
+            column="dwzsjf"
+            type="float"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 

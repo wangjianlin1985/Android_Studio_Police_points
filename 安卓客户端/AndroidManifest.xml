@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobileclient.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+         android:targetSdkVersion="8"
+         /> 
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:name="com.mobileclient.app.Declare">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="MainMenuActivity"></activity>
+        <activity android:name="MainMenuDepartmentActivity"></activity>
+        <activity android:name="JftjcListActivity"></activity>
+        <activity android:name="JftjcQueryActivity"></activity>
+        <activity android:name="JftjcAddActivity"></activity>
+        <activity android:name="JftjcEditActivity"></activity>
+        <activity android:name="JftjcDetailActivity"></activity>
+        <activity android:name="ZxyjfListActivity"></activity>
+        <activity android:name="ZxyjfQueryActivity"></activity>
+        <activity android:name="ZxyjfDepartQueryActivity"></activity>
+        <activity android:name="ZxyjfAddActivity"></activity>
+        <activity android:name="ZxyjfEditActivity"></activity>
+        <activity android:name="ZxyjfDetailActivity"></activity>
+        <activity android:name="ZxyListActivity"></activity>
+        <activity android:name="ZxyQueryActivity"></activity>
+        <activity android:name="ZxyDepartQueryActivity"></activity>
+        <activity android:name="ZxyDepartQueryActivity"></activity>
+        <activity android:name="ZxyAddActivity"></activity>
+        <activity android:name="ZxyEditActivity"></activity>
+        <activity android:name="ZxyDetailActivity"></activity>
+        <activity android:name="ZxymjListActivity"></activity>
+        <activity android:name="ZxymjQueryActivity"></activity>
+        <activity android:name="ZxymjDepartQueryActivity"></activity>
+        <activity android:name="ZxymjAddActivity"></activity>
+        <activity android:name="ZxymjEditActivity"></activity>
+        <activity android:name="ZxymjDetailActivity"></activity>
+        <activity android:name="ZxyndListActivity"></activity>
+        <activity android:name="ZxyndQueryActivity"></activity>
+        <activity android:name="ZxyndDepartQueryActivity"></activity>
+        <activity android:name="ZxyndAddActivity"></activity>
+        <activity android:name="ZxyndEditActivity"></activity>
+        <activity android:name="ZxyndDetailActivity"></activity>
+        <activity android:name="ZxymjndListActivity"></activity>
+        <activity android:name="ZxymjndQueryActivity"></activity>
+        <activity android:name="ZxymjndDepartQueryActivity"></activity>
+        <activity android:name="ZxymjndAddActivity"></activity>
+        <activity android:name="ZxymjndEditActivity"></activity>
+        <activity android:name="ZxymjndDetailActivity"></activity>
+
+        <activity android:name="photoListActivity"></activity>
+        <activity android:name="fileListActivity"></activity>
+    </application>
+
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+
+	<!-- 文件读写权限 -->
+	
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"></uses-permission>
+	
+	
+</manifest>

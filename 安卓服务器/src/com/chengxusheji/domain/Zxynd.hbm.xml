@@ -1,0 +1,87 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.chengxusheji.domain">
+
+	<class name="Zxynd" table="yy_zxynd">
+
+          <!-- 主键id -->
+          <id name="id" column="id">
+            <generator class="native"/>
+          </id>
+
+          <!-- 简单整型属性: 部门ID -->
+          <property
+            name="bid"
+            column="bid"
+            type="int"
+
+          />
+
+          <!-- 简单字符串属性: 部门名称 -->
+          <property
+            name="bname"
+            column="bname"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单整型属性: 部门类型 -->
+          <property
+            name="btypes"
+            column="btypes"
+            type="int"
+
+          />
+
+          <!-- 简单字符串属性: 积分年度 -->
+          <property
+            name="jfjd"
+            column="jfjd"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单浮点型属性: 刑事发案积分 -->
+          <property
+            name="xsfajf"
+            column="xsfajf"
+            type="float"
+          />
+
+          <!-- 简单浮点型属性: 号码走访积分 -->
+          <property
+            name="hmzfjf"
+            column="hmzfjf"
+            type="float"
+          />
+
+          <!-- 简单浮点型属性: 测评反馈积分 -->
+          <property
+            name="cpfkjf"
+            column="cpfkjf"
+            type="float"
+          />
+
+          <!-- 简单浮点型属性: 单位重视积分 -->
+          <property
+            name="dwzsjf"
+            column="dwzsjf"
+            type="float"
+          />
+
+          <!-- 简单浮点型属性: 合计分 -->
+          <property
+            name="hjf"
+            column="hjf"
+            type="float"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 
